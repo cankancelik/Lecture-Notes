@@ -402,9 +402,9 @@ state-space condition. We can find a minimal realization using Gilbert's method
 	0 & 0  \end{array} \right] \frac{1}{s+1}
 	= \left[ \begin{array}{cc} 1 & 1   \\  
 	0 & 1  \end{array} \right] +  \left[ \begin{array}{c} -1 \\ 0 \end{array} \right]   
-       \left[ \begin{array}{cc} 0 & 1 \end{array} \right]    \frac{1}{s+1}
+       \left[ \begin{array}{cc} 0 & 1 \end{array} \right]    \frac{1}{s+2}
        \\
-       A &= -1 \, , \, B = \left[ \begin{array}{cc} 0 & 1 \end{array} \right] \ , \ C = \left[ \begin{array}{c} -1 \\ 0 \end{array} \right]
+       A &= -2 \, , \, B = \left[ \begin{array}{cc} 0 & 1 \end{array} \right] \ , \ C = \left[ \begin{array}{c} -1 \\ 0 \end{array} \right]
        \, , \, D = \left[ \begin{array}{cc} 1 & 1   \\  
 	0 & 1  \end{array} \right]
 \end{align*}
@@ -413,7 +413,7 @@ Let's construct the system matrix
 %
 \begin{align*}
 \mathbf{S} = \left[ \begin{array}{cc} s I - A & -B \\ C & D \end{array} \right]
-= \left[ \begin{array}{ccc} s + 1 & 0 & - 1 \\ -1 & 1 & 1 \\ 0 & 0 & 1 \end{array} \right]
+= \left[ \begin{array}{ccc} s + 2 & 0 & - 1 \\ -1 & 1 & 1 \\ 0 & 0 & 1 \end{array} \right]
 \, \Rightarrow \, \mathrm{rank}S(s)_{s-1} = 2 
 \end{align*}
 %
